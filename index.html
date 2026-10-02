@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Studio Game Mayza</title>
+    <style>
+        body { font-family: Arial; text-align: center; background: #f0f8ff; }
+       .game-card {
+            background: white;
+            padding: 20px;
+            margin: 12px auto;
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>🎮 Selamat Datang di Studio Kami</h1>
+    <div id="daftar-game"></div>
+
+    <script>
+        let namaGame = ["Petualangan Kucing", "Tangkap Buah", "Tebak Hewan"];
+        for (let i = 0; i < namaGame.length; i++) {
+            document.getElementById("daftar-game").innerHTML +=
+            "<div class='game-card'><h3>🎮 " + namaGame[i] + "</h3></div>";
+        }
+    </script>
+</body>
+</html>
